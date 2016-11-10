@@ -15,6 +15,8 @@
 		952609D91D8B063A00839264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952609D71D8B063A00839264 /* LaunchScreen.storyboard */; };
 		952609E41D8B063A00839264 /* customcellshortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952609E31D8B063A00839264 /* customcellshortyTests.swift */; };
 		952609EF1D8B063A00839264 /* customcellshortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952609EE1D8B063A00839264 /* customcellshortyUITests.swift */; };
+		952609FD1D8B087A00839264 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952609FC1D8B087A00839264 /* CustomCell.swift */; };
+		95DEBDCA1D8B09BB0074EFD9 /* CustomCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DEBDC91D8B09BB0074EFD9 /* CustomCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		952609EA1D8B063A00839264 /* customcellshortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customcellshortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		952609EE1D8B063A00839264 /* customcellshortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customcellshortyUITests.swift; sourceTree = "<group>"; };
 		952609F01D8B063A00839264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952609FC1D8B087A00839264 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		95DEBDC91D8B09BB0074EFD9 /* CustomCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				952609CB1D8B063A00839264 /* AppDelegate.swift */,
 				952609CD1D8B063A00839264 /* ViewController.swift */,
+				95DEBDC91D8B09BB0074EFD9 /* CustomCellDelegate.swift */,
 				952609CF1D8B063A00839264 /* Main.storyboard */,
+				952609FC1D8B087A00839264 /* CustomCell.swift */,
 				952609D51D8B063A00839264 /* Assets.xcassets */,
 				952609D71D8B063A00839264 /* LaunchScreen.storyboard */,
 				952609DA1D8B063A00839264 /* Info.plist */,
@@ -197,15 +203,18 @@
 					952609C71D8B063A00839264 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 93DU6VN4H3;
+						LastSwiftMigration = 0810;
 					};
 					952609DE1D8B063A00839264 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 93DU6VN4H3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 952609C71D8B063A00839264;
 					};
 					952609E91D8B063A00839264 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 93DU6VN4H3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 952609C71D8B063A00839264;
 					};
 				};
@@ -262,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95DEBDCA1D8B09BB0074EFD9 /* CustomCellDelegate.swift in Sources */,
 				952609CE1D8B063A00839264 /* ViewController.swift in Sources */,
 				952609CC1D8B063A00839264 /* AppDelegate.swift in Sources */,
+				952609FD1D8B087A00839264 /* CustomCell.swift in Sources */,
 				952609D41D8B063A00839264 /* customcellshorty.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +423,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.customcellshorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -423,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.customcellshorty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -434,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.customcellshortyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/customcellshorty.app/customcellshorty";
 			};
 			name = Debug;
@@ -446,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.customcellshortyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/customcellshorty.app/customcellshorty";
 			};
 			name = Release;
@@ -457,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.customcellshortyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = customcellshorty;
 			};
 			name = Debug;
@@ -468,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingdojo.customcellshortyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = customcellshorty;
 			};
 			name = Release;
@@ -491,6 +508,7 @@
 				952609F51D8B063A00839264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		952609F61D8B063A00839264 /* Build configuration list for PBXNativeTarget "customcellshortyTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +517,7 @@
 				952609F81D8B063A00839264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		952609F91D8B063A00839264 /* Build configuration list for PBXNativeTarget "customcellshortyUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +526,7 @@
 				952609FB1D8B063A00839264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
